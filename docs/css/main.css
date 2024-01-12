@@ -1,0 +1,609 @@
+@font-face {
+  font-family: "FuturaDemiC";
+  src: url("../fonts/FuturaDemiC.eot");
+  src: local("Futura Demi Cyrillic"), local("FuturaDemiC"), url("../fonts/FuturaDemiC.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaDemiC.woff") format("woff"), url("../fonts/FuturaDemiC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FuturaMediumC";
+  src: url("../fonts/FuturaMediumC.eot");
+  src: local("Futura Medium Cyrillic"), local("FuturaMediumC"), url("../fonts/FuturaMediumC.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaMediumC.woff") format("woff"), url("../fonts/FuturaMediumC.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FuturaLightC";
+  src: url("../fonts/FuturaLightC-Italic.eot");
+  src: local("Futura Light Italic Cyrillic"), local("FuturaLightC-Italic"), url("../fonts/FuturaLightC-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaLightC-Italic.woff") format("woff"), url("../fonts/FuturaLightC-Italic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "FuturaMediumC";
+  src: url("../fonts/FuturaMediumC-Italic.eot");
+  src: local("Futura Medium Italic Cyrillic"), local("FuturaMediumC-Italic"), url("../fonts/FuturaMediumC-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaMediumC-Italic.woff") format("woff"), url("../fonts/FuturaMediumC-Italic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "FuturaLightC";
+  src: url("../fonts/FuturaLightC.eot");
+  src: local("Futura Light Cyrillic"), local("FuturaLightC"), url("../fonts/FuturaLightC.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaLightC.woff") format("woff"), url("../fonts/FuturaLightC.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FuturaDemiC";
+  src: url("../fonts/FuturaDemiC-Italic.eot");
+  src: local("Futura Demi Italic Cyrillic"), local("FuturaDemiC-Italic"), url("../fonts/FuturaDemiC-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaDemiC-Italic.woff") format("woff"), url("../fonts/FuturaDemiC-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "FuturaBookC";
+  src: url("../fonts/FuturaBookC-Italic.eot");
+  src: local("Futura Book Italic Cyrillic"), local("FuturaBookC-Italic"), url("../fonts/FuturaBookC-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaBookC-Italic.woff") format("woff"), url("../fonts/FuturaBookC-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "FuturaBookC";
+  src: url("../fonts/FuturaBookC.eot");
+  src: local("Futura Book Cyrillic"), local("FuturaBookC"), url("../fonts/FuturaBookC.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaBookC.woff") format("woff"), url("../fonts/FuturaBookC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Georgia";
+  src: url("../fonts/Georgia-BoldItalic.eot");
+  src: local("Georgia Bold Italic"), local("Georgia-BoldItalic"), url("../fonts/Georgia-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Georgia-BoldItalic.woff") format("woff"), url("../fonts/Georgia-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Georgia";
+  src: url("../fonts/Georgia-Italic.eot");
+  src: local("Georgia Italic"), local("Georgia-Italic"), url("../fonts/Georgia-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Georgia-Italic.woff") format("woff"), url("../fonts/Georgia-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Georgia";
+  src: url("../fonts/Georgia-Bold.eot");
+  src: local("Georgia Bold"), local("Georgia-Bold"), url("../fonts/Georgia-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Georgia-Bold.woff") format("woff"), url("../fonts/Georgia-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Georgia";
+  src: url("../fonts/Georgia.eot");
+  src: local("Georgia"), url("../fonts/Georgia.eot?#iefix") format("embedded-opentype"), url("../fonts/Georgia.woff") format("woff"), url("../fonts/Georgia.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: flex;
+    opacity: 0;
+  }
+  100% {
+    display: flex;
+    opacity: 1;
+  }
+}
+body {
+  font-family: "FuturaMediumC", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  line-height: normal;
+  background: url("../img/background.jpg") no-repeat center top/cover;
+}
+
+.container {
+  max-width: 1560px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.header {
+  padding: 27px 0 0 0;
+}
+.header .menu {
+  display: flex;
+  align-items: center;
+  gap: 25px 30px;
+}
+.header .menu-item {
+  cursor: pointer;
+  padding: 7px 12px;
+  font-size: 16px;
+}
+.header .menu .social {
+  display: flex;
+  gap: 0 22px;
+  border-radius: 60px;
+  background: rgba(0, 0, 0, 0.4);
+}
+.header .menu .social-img {
+  width: 35px;
+  height: 35px;
+}
+.header .menu .cart {
+  display: flex;
+  gap: 0 15px;
+  align-items: center;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.11);
+  margin-left: auto;
+}
+.header .menu .cart-count {
+  width: 30px;
+  height: 30px;
+  font-weight: 500;
+  line-height: normal;
+  padding: 5px 10px;
+  background: rgba(178, 95, 73, 0.9);
+  border-radius: 15px;
+}
+.header .menu .language {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0 26px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.11);
+}
+.header .menu .language::after {
+  position: absolute;
+  content: "";
+  background: url("../img/header_arrow.png") no-repeat center top/cover;
+  width: 10px;
+  height: 10px;
+  top: 17px;
+  right: 17px;
+}
+.header .menu .language-text {
+  padding: 0 37px 0 0;
+}
+.header .menu .date {
+  display: flex;
+  gap: 0 18px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.11);
+  border-radius: 30px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 48px 0 0 0;
+}
+.content .logo {
+  position: relative;
+  margin: 0 0 62px 0;
+}
+.content .logo-absolute {
+  position: absolute;
+  bottom: -30%;
+  left: -56%;
+}
+.content-link {
+  cursor: pointer;
+  position: relative;
+  font-family: "Georgia", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  font-style: italic;
+  background: rgba(0, 0, 0, 0.66);
+  padding: 30px 50px 32px 50px;
+  margin: 0 0 70px 0;
+  transition: 0.3s background;
+}
+.content-link.reservation {
+  background: rgba(178, 95, 73, 0.9);
+}
+.content-link.hovered, .content-link.active {
+  background: rgba(178, 95, 73, 0.9);
+}
+.content-link::before, .content-link::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0.8px solid #FFF;
+}
+.content-link::before {
+  top: -10px;
+  left: -13px;
+}
+.content-link::after {
+  bottom: -9px;
+  right: -13px;
+}
+.content-form {
+  display: none;
+  opacity: 0;
+  animation: fadeInFromNone 1s ease-in-out;
+  gap: 40px 20px;
+  background: rgba(0, 0, 0, 0.39);
+  position: relative;
+  border: 1px solid #FFF;
+  width: 100%;
+  padding: 52px 20px 76px 20px;
+  margin: 0 0 48px 0;
+}
+.content-form::after {
+  position: absolute;
+  content: "";
+  top: -21px;
+  left: -19px;
+  border: 1px solid #FFF;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.content-form.active {
+  display: flex;
+  opacity: 1;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.content-form label {
+  font-size: 24px;
+  color: #B4B1B1;
+}
+.content-form input {
+  display: block;
+  height: 84px;
+  margin: 17px 0 0 0;
+  padding: 26px 29px;
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  background: rgba(217, 217, 217, 0.12);
+  color: #8A8888;
+  font-size: 24px;
+  width: 100%;
+}
+.content-form .label-date {
+  width: 360px;
+}
+.content-form .label-time {
+  width: 233px;
+}
+.content-form .label-count {
+  width: 233px;
+  position: relative;
+}
+.content-form .label-count::after {
+  position: absolute;
+  content: "";
+  bottom: 30px;
+  right: 20px;
+  width: 18px;
+  height: 18px;
+  background: url("../img/count_arrow.png") no-repeat;
+}
+.content-form .label-phone {
+  width: 358px;
+}
+.content-form .label-name {
+  width: 437px;
+}
+.content-form .label-family {
+  width: 409px;
+}
+.content-form #input_submit {
+  width: 380px;
+}
+.content-form button {
+  font-size: 24px;
+  color: #fff;
+  background: #AD604B;
+  width: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 84px;
+}
+.content-box.orderfood {
+  display: none;
+  opacity: 0;
+  animation: fadeInFromNone 1s ease-in-out;
+}
+.content-box.orderfood.active {
+  display: flex;
+  opacity: 1;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 68px 65px;
+  margin: 0 0 112px 0;
+}
+.content-box.orderfood .orderfood-link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 50px;
+  background: rgba(0, 0, 0, 0.66);
+  font-family: "Georgia", sans-serif;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 400;
+}
+.content-box.orderfood .orderfood-link::before, .content-box.orderfood .orderfood-link::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0.8px solid #FFF;
+}
+.content-box.orderfood .orderfood-link::before {
+  top: -10px;
+  left: -13px;
+}
+.content-box.orderfood .orderfood-link::after {
+  bottom: -9px;
+  right: -13px;
+}
+.content-box.about {
+  display: none;
+  opacity: 0;
+}
+.content-box.about.active {
+  display: flex;
+  opacity: 1;
+  animation: fadeInFromNone 1s ease-in-out;
+  background: rgba(0, 0, 0, 0.39);
+  padding: 66px 70px;
+  position: relative;
+  border: 1px solid #fff;
+  margin: 0 0 103px 0;
+}
+.content-box.about.active::after {
+  position: absolute;
+  content: "";
+  top: -21px;
+  left: -19px;
+  border: 1px solid #FFF;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.content-box.about.active .about-text {
+  line-height: 150%;
+  letter-spacing: 0.54px;
+  text-align: center;
+}
+
+.footer {
+  font-size: 16px;
+  padding: 0 0 47px 0;
+}
+.footer .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px 109px;
+}
+.footer .menu-location {
+  padding-left: 34px;
+  position: relative;
+}
+.footer .menu-location::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 20px;
+  background: url("../img/gps.png") no-repeat;
+}
+.footer .menu-phone {
+  padding-left: 34px;
+  position: relative;
+}
+.footer .menu-phone::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 17px;
+  height: 18px;
+  background: url("../img/phone.png") no-repeat;
+}
+
+@media screen and (max-width: 1200px) {
+  .content .logo {
+    margin: 0 0 80px 0;
+  }
+  .content .logo-img {
+    width: 321px;
+    height: 279px;
+  }
+  .content .logo-absolute {
+    bottom: -17%;
+    left: -11%;
+    width: 390px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 10px;
+  }
+  .header .menu .cart {
+    gap: 0 9px;
+    margin-left: 0;
+  }
+  .header .menu .social {
+    order: 4;
+  }
+  .header .menu .date {
+    gap: 0 9px;
+    font-size: 11px;
+  }
+  .header .menu .language {
+    gap: 0 8px;
+  }
+  .header .menu .language-text {
+    padding: 0 25px 0 0;
+  }
+  .content-link {
+    font-size: 26px;
+    margin: 0 0 45px 0;
+    padding: 30px 40px 32px 40px;
+  }
+  .content-link.orderfood.active {
+    margin-bottom: 60px;
+  }
+  .content-form {
+    padding: 10px 20px 10px 20px;
+    gap: 18px 17px;
+    background: none;
+    border: none;
+  }
+  .content-form input {
+    padding: 26px 15px;
+  }
+  .content-form label {
+    font-size: 16px;
+  }
+  .content-form.active {
+    justify-content: flex-start;
+  }
+  .content-form::after {
+    display: none;
+  }
+  .content-form .label-date {
+    width: 100%;
+  }
+  .content-form .label-time {
+    width: 40%;
+  }
+  .content-form .label-count {
+    width: 53%;
+  }
+  .content-form .label-phone {
+    width: 100%;
+  }
+  .content-form .label-name {
+    width: 100%;
+  }
+  .content-form .label-family {
+    width: 100%;
+  }
+  .content-form #input_submit {
+    width: 100%;
+  }
+  .content-form #input_phone::-moz-placeholder {
+    letter-spacing: 1.2px;
+  }
+  .content-form #input_phone::placeholder {
+    letter-spacing: 1.2px;
+  }
+  .content .orderfood .orderfood-link {
+    font-size: 18px;
+  }
+  .content .orderfood.active {
+    gap: 45px 65px;
+  }
+  .content .content-box.orderfood.active {
+    margin: 0 0 75px 0;
+  }
+  .content .content-box.about.active {
+    margin: 25px 0 35px 0;
+    padding: 35px 25px;
+  }
+  .footer {
+    font-size: 14px;
+  }
+  .footer .menu {
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 20px 42px;
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=main.css.map */
